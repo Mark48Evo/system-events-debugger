@@ -1,0 +1,46 @@
+{
+  "name": "@mark48evo/system-events-debugger",
+  "version": "1.0.0",
+  "description": "A tool to debug system events",
+  "author": "Aurimas Niekis <aurimas@niekis.lt> (https://github.com/Mark48Evo)",
+  "license": "MIT",
+  "repository": "Mark48Evo/system-events-debugger",
+  "contributors": [
+    {
+      "name": "Aurimas Niekis",
+      "email": "aurimas@niekis.lt"
+    }
+  ],
+  "scripts": {
+    "rollup": "rollup -c rollup.config.js",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix"
+  },
+  "files": [
+    "bin",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "bin": {
+    "system-events-debugger": "./bin/systemEventsDebugger.js"
+  },
+  "dependencies": {
+    "@mark48evo/rabbitmq-pubsub": "^1.1.1",
+    "amqplib": "^0.5.2",
+    "chalk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/node": "^7.0.0-beta.51",
+    "@babel/plugin-external-helpers": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "rollup": "^0.61.2",
+    "rollup-plugin-babel": "^4.0.0-beta.7",
+    "rollup-plugin-eslint": "^4.0.0"
+  }
+}
